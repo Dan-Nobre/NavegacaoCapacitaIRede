@@ -1,6 +1,6 @@
 package com.example.navegaocapacitairede
 
-sealed class Screen {
+sealed class Screen(val route: String) {
     object Home    : Screen("home")
     object Sobre   : Screen("sobre")
     object Detalhe : Screen("detalhe/{nome}") {
