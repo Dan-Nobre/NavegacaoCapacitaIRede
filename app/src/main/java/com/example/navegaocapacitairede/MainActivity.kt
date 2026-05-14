@@ -20,8 +20,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MaterialTheme() {
-
+                AppNavegacao()
             }
         }
     }
 }
+
+// a Activity não sabe nada sobre telas, rotas ou navegação. Ela delega tudo para esse composable.
+// A Activity fica enxuta de propósito.
